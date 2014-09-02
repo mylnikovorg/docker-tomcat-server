@@ -1,0 +1,21 @@
+#!/bin/sh
+#
+# This script will be executed *after* all the other init scripts.
+# You can put your own initialization stuff in here if you don't
+# want to do the full Sys V style init stuff.
+
+touch /var/lock/subsys/local
+mkdir /mnt/ramdisk/jdk
+#mkdir /mnt/ramdisk/files
+#wget -P /home/ec2-user/project/  http://101.mylnikov.org/ROOT.war 
+#wget -P /home/ec2-user/project/  http://101.mylnikov.org/examples.zip
+#unzip /home/ec2-user/project/examples.zip -d /home/ec2-user/project/kotlin-web-demo
+#ln -s /mnt/ramdisk/files/  /opt/apache-tomcat-7.0.55/webapps
+#ln -s /mnt/ramdisk/jdk/  /home/ec2-user/project/jdk1.8.0_11
+#cp -r /home/ec2-user/project/files_jdk1.8.0_11/* /home/ec2-user/project/jdk1.8.0_11
+#cp /home/ec2-user/project/ROOT.war /opt/apache-tomcat-7.0.55/webapps/
+#/opt/apache-tomcat-7.0.55/bin/catalina.sh start
+export IIII="uunm"
+
+exit 0
+

