@@ -1,5 +1,13 @@
 #!/bin/sh
 
-wget http://101.mylnikov.org/ROOT.war
+wget -O /opt/apache-tomcat-7.0.55/webapps/ROOT.war http://101.mylnikov.org/ROOT.war
+wget -O /home/project/examples.zip http://101.mylnikov.org/examples.zip
+cd /home/project && unzip examples.zip
+ls -all /home/project/examples/ 
 
+exec "$CATALINA_HOME"/bin/catalina.sh start
+
+#/opt/apache-tomcat-7.0.55/bin/catalina.sh start
+sleep 30
+curl http://localhost
 wait
