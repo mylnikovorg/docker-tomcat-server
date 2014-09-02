@@ -22,10 +22,10 @@ RUN cd /opt && mkdir jre  && cp -r /home/tmp/jre-8u20-linux-x64.tar.gz/jre1.8.0_
 
 RUN rm -rf /opt/apache-tomcat-7.0.55/webapps/*
 
-ENV _RUNJAVA /opt/jre/bin/java
+#ENV _RUNJAVA /opt/jre/bin/java
 ENV CATALINA_HOME /opt/apache-tomcat-7.0.55
-ENV JAVA_HOME /opt/jre/bin/java
-ENV JRE_HOME /opt/jre/bin/java
+ENV JAVA_HOME /opt/jre
+ENV JRE_HOME /opt/jre
 
 RUN mkdir /home/project
 
